@@ -23,6 +23,12 @@ spec:
                 configMapKeyRef:
                   name: app-config
                   key: APP_ENV
+            - name : DB_PASS
+              valueFrom:
+                secretKeyRef:
+                  name: db-secret
+                  key: DB_PASS
+
 ---
 apiVersion: v1
 kind: Service
