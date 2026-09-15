@@ -6,6 +6,6 @@ spec:
   capacity:
     storage: 1Gi
   accessModes:
-    - readWriteOnce
+    - ReadWriteOnce
   hostPath:
     path: /app/data
