@@ -4,7 +4,7 @@ metadata:
   name : my-pv 
 spec:
   capacity:
-    storage: 1Gistorage
+    storage: 1Gi
   accessModes:
     - readWriteOnce
   hostPath:
