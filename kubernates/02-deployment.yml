@@ -17,6 +17,12 @@ spec:
       containers:
         - name: nginx
           image: nginx:1.27-alpine
+          env:
+            - name : APP_ENV
+              valueFrom: 
+                configMapKeyRef:
+                  name: app-config
+                  key: APP_ENV
 ---
 apiVersion: v1
 kind: Service
