@@ -3,7 +3,8 @@ kind: PersistentVolume
 metadata:
   name : my-pv 
 spec:
-  storage: 1 Gi
+  capacity:
+    storage: 1Gistorage
   accessModes:
     - readWriteOnce
   hostPath:
